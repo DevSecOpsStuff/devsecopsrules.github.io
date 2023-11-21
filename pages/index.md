@@ -1,6 +1,6 @@
 ---
 layout: page
-title: راه اندازی مخزن کدنویسی امن
+title: DevSecOps Guides Rules
 permalink: /
 ---
 
@@ -13,7 +13,6 @@ permalink: /
 
     </script>
 
-### مقدمه
+### Introduction
 
-در این مخزن Rule های مربوط به کدنویسی امن به زبان فارسی تدوین می شود.
-
+DevSecOps non-compliance vs compliance rules

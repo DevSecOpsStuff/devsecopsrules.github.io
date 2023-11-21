@@ -29,7 +29,7 @@ baseurl: "https://rules.devsecopsguides.com" # the subpath of your site, e.g. /b
 url: "" # the base hostname & protocol for your site
 
 # Social (First three Required)
-repo: "https://github.com/securec0ding/securec0ding.github.io"
+repo: "https://github.com/devsecopsrules/devsecopsrules.github.io"
 github_user: "devsecopsrules"
 github_repo: "devsecopsrules.github.io"
 github_branch: "main"
