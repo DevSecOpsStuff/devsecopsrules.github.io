@@ -7617,6 +7617,16 @@ button.bg-dark:focus {
     background: #403f4c linear-gradient(180deg, #5d5c67, #403F4C) repeat-x!important
 }
 
+
+@media (min-width: 1200px){
+.flex-xl-nowrap {
+    -webkit-flex-wrap: nowrap!important;
+    -ms-flex-wrap: nowrap!important;
+    flex-wrap: nowrap!important;
+    margin-right: -21%;
+}
+}
+
 .bg-white {
     background-color: #fff!important
 }
@@ -10764,7 +10774,8 @@ a.text-dark:focus {
         size: a3
     }
     body {
-        min-width: 992px!important
+        min-width: 992px!important;
+        overflow-x: hidden !important;
     }
     .container {
         min-width: 992px!important
@@ -18194,9 +18205,10 @@ html body .md-typeset .headerlink {
     background: #f7f7f7;
 }
 
-@media (min-width: 768px)
+@media (min-width: 768px){
 .pl-md-5, .px-md-5 {
     padding-left: 19rem!important;
+}
 }
 
 .pr-2, .px-2 {
