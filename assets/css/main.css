@@ -18229,8 +18229,8 @@ html body .md-typeset .headerlink {
 
 .td-sidebar-nav a.active {
     font-weight: 700;
-    direction: rtl;
-    text-align: right;
+    direction: ltr;
+    text-align: left;
 }
 
 .td-sidebar-nav .dropdown a {
