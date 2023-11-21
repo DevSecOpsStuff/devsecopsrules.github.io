@@ -18185,13 +18185,18 @@ html body .md-typeset .headerlink {
 
 .td-sidebar-nav .td-sidebar-link {
     display: block;
-    direction: rtl;
+    direction: ltr;
     text-align: left;
     font-family: 'Fira Code';
     padding-bottom: 0.375rem;
     padding: 5px 1px 5px 1px;
     border-left: solid;
     background: #f7f7f7;
+}
+
+@media (min-width: 768px)
+.pl-md-5, .px-md-5 {
+    padding-left: 19rem!important;
 }
 
 .pr-2, .px-2 {
@@ -18573,8 +18578,8 @@ html body .md-typeset .headerlink {
 
 .td-main main {
     padding-bottom: 2rem;
-    direction: rtl;
-    text-align: right;
+    direction: ltr;
+    text-align: left;
 
 }
 
