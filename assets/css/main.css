@@ -7623,7 +7623,7 @@ button.bg-dark:focus {
     -webkit-flex-wrap: nowrap!important;
     -ms-flex-wrap: nowrap!important;
     flex-wrap: nowrap!important;
-    margin-right: -21%;
+    margin-right: -42%;
 }
 }
 
@@ -18207,7 +18207,7 @@ html body .md-typeset .headerlink {
 
 @media (min-width: 768px){
 .pl-md-5, .px-md-5 {
-    padding-left: 19rem!important;
+    padding-left: 36rem!important;
 }
 }
 
