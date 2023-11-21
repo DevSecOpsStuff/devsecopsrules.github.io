@@ -8,10 +8,10 @@ description: PHP Vulnerabilities
 # PHP
 
 
-## آسیب پذیری Exposure of sensitive information
+##  Exposure of sensitive information
 
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 
@@ -33,7 +33,7 @@ function processUserInput($input) {
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -51,9 +51,9 @@ function processUserInput($input) {
 
 
 
-## آسیب پذیری Insertion of Sensitive Information Into Sent Data
+##  Insertion of Sensitive Information Into Sent Data
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -72,7 +72,7 @@ $response = file_get_contents('https://example.com/api', null, stream_context_cr
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -94,9 +94,9 @@ $response = file_get_contents($api_url, null, stream_context_create(array(
 
 
 
-## آسیب پذیری  Cross-Site Request Forgery (CSRF)
+##   Cross-Site Request Forgery (CSRF)
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -108,7 +108,7 @@ $response = file_get_contents($api_url, null, stream_context_create(array(
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -128,9 +128,9 @@ $_SESSION['token'] = bin2hex(random_bytes(32));
 
 
 
-## آسیب پذیری  Use of Hard-coded Password
+##   Use of Hard-coded Password
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -142,7 +142,7 @@ $connection = mysqli_connect("localhost", "myuser", $password, "mydatabase");
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -158,9 +158,9 @@ $connection = mysqli_connect("localhost", "myuser", $config['db_password'], "myd
 
 
 
-## آسیب پذیری  Broken or Risky Crypto Algorithm
+##   Broken or Risky Crypto Algorithm
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -176,7 +176,7 @@ function encryptData($data, $key) {
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -191,9 +191,9 @@ function encryptData($data, $key) {
 
 
 
-## آسیب پذیری  Insufficient Entropy
+##   Insufficient Entropy
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -205,7 +205,7 @@ $token = substr(str_shuffle('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXY
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -219,9 +219,9 @@ $token = bin2hex(random_bytes(16));
 
 
 
-## آسیب پذیری  XSS
+##   XSS
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -235,7 +235,7 @@ echo "Welcome " . $username . "!";
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -251,9 +251,9 @@ echo "Welcome " . $username . "!";
 
 
 
-## آسیب پذیری  SQL Injection
+##   SQL Injection
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -268,7 +268,7 @@ $result = mysqli_query($conn, $sql);
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -284,9 +284,9 @@ $result = mysqli_query($conn, $sql);
 
 
 
-## آسیب پذیری  External Control of File Name or Path
+##   External Control of File Name or Path
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -305,7 +305,7 @@ $result = $stmt->get_result();
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -324,9 +324,9 @@ if (file_exists($file) && is_file($file)) {
 
 
 
-## آسیب پذیری  Generation of Error Message Containing Sensitive Information
+##   Generation of Error Message Containing Sensitive Information
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -343,7 +343,7 @@ if ($username != 'admin' || $password != 'secretpass') {
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -363,9 +363,9 @@ if ($username != 'admin' || $password != 'secretpass') {
 
 
 
-## آسیب پذیری  unprotected storage of credentials
+##   unprotected storage of credentials
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -381,7 +381,7 @@ fclose($file);
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -398,9 +398,9 @@ mysqli_query($dbConnection, $query);
 
 
 
-## آسیب پذیری  Trust Boundary Violation
+##   Trust Boundary Violation
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -414,7 +414,7 @@ $results = mysqli_query($conn, $query);
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -437,9 +437,9 @@ if ($user_id === false) {
 
 
 
-## آسیب پذیری  Insufficiently Protected Credentials
+##   Insufficiently Protected Credentials
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -454,7 +454,7 @@ mysqli_query($conn, $query);
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -481,9 +481,9 @@ $stmt->execute();
 
 
 
-## آسیب پذیری  Restriction of XML External Entity Reference
+##   Restriction of XML External Entity Reference
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -497,7 +497,7 @@ $xml = simplexml_load_string($xmlstring, 'SimpleXMLElement', LIBXML_NOENT);
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -516,10 +516,10 @@ libxml_disable_entity_loader($disableEntities);
 
 
 
-## آسیب پذیری  Vulnerable and Outdated Components
+##   Vulnerable and Outdated Components
 
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -563,7 +563,7 @@ if (!$mail->Send()) {
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -604,9 +604,9 @@ if (!$mail->send()) {
 
 
 
-## آسیب پذیری  Improper Validation of Certificate with Host Mismatch
+##   Improper Validation of Certificate with Host Mismatch
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -622,7 +622,7 @@ $data = file_get_contents('https://example.com', false, $context);
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -639,9 +639,9 @@ $data = file_get_contents('https://'.$host, false, $context);
 
 
 
-## آسیب پذیری  Improper Authentication
+##   Improper Authentication
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -667,7 +667,7 @@ if ($_POST['username'] === $username && $_POST['password'] === $password) {
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -698,9 +698,9 @@ if (validateCredentials($username, $password)) {
 
 
 
-## آسیب پذیری  Session Fixation
+##   Session Fixation
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -722,7 +722,7 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -749,9 +749,9 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
 
 
 
-## آسیب پذیری  Inclusion of Functionality from Untrusted Control
+##   Inclusion of Functionality from Untrusted Control
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -767,7 +767,7 @@ include($remoteUrl);
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -788,9 +788,9 @@ if (filter_var($remoteUrl, FILTER_VALIDATE_URL)) {
 
 
 
-## آسیب پذیری  Download of Code Without Integrity Check
+##   Download of Code Without Integrity Check
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -805,7 +805,7 @@ system('tar -xvf /tmp/package.tar.gz');
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -825,9 +825,9 @@ if (hash('sha256', $pkg) === trim($hash)) {
 
 
 
-## آسیب پذیری  Deserialization of Untrusted Data
+##   Deserialization of Untrusted Data
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -846,7 +846,7 @@ $id = $userData['id'];
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -872,9 +872,9 @@ if (isset($userData->id)) {
 
 
 
-## آسیب پذیری  Insufficient Logging
+##   Insufficient Logging
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -892,7 +892,7 @@ function transferMoney($amount, $recipient) {
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -923,9 +923,9 @@ function transferMoney($amount, $recipient) {
 
 
 
-## آسیب پذیری  Improper Output Neutralization for Logs
+##   Improper Output Neutralization for Logs
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -940,7 +940,7 @@ file_put_contents('logs.txt', 'Username: '.$username.' Password: '.$password);
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -964,9 +964,9 @@ file_put_contents('logs.txt', 'Username: '.$sanitized_username.' Password: '.$sa
 
 
 
-## آسیب پذیری  Omission of Security-relevant Information
+##   Omission of Security-relevant Information
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -990,7 +990,7 @@ if (mysqli_num_rows($result) > 0) {
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -1022,9 +1022,9 @@ if (mysqli_num_rows($result) > 0) {
 
 
 
-## آسیب پذیری  Sensitive Information into Log File
+##   Sensitive Information into Log File
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -1039,7 +1039,7 @@ error_log("Login attempt with username: ".$username." and password: ".$password)
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -1063,9 +1063,9 @@ function redact($string) {
 
 
 
-## آسیب پذیری  Server-Side Request Forgery (SSRF)
+##   Server-Side Request Forgery (SSRF)
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -1079,7 +1079,7 @@ echo $file;
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}

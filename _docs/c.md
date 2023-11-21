@@ -7,14 +7,14 @@ description: C Vulnerabilities
 
 # C
 
-### آسیب پذیری Buffer Overflow
+###  Buffer Overflow
 
-<button class="btn btn-danger">آسیب پذیری</button>
-
-
+<button class="btn btn-danger"></button>
 
 
-##### 🐞 کد آسیب پذیر
+
+
+##### 🐞 non-compliance
 
 {% highlight php %}
 void copy_string(char* dest, char* src) {
@@ -37,7 +37,7 @@ int main() {
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}

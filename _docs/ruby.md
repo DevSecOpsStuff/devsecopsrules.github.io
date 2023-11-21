@@ -9,10 +9,10 @@ description: Ruby Vulnerabilities
 
 
 
-## آسیب پذیری Exposure of sensitive information
+##  Exposure of sensitive information
 
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 
@@ -33,7 +33,7 @@ end
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -55,9 +55,9 @@ end
 
 
 
-## آسیب پذیری Insertion of Sensitive Information Into Sent Data
+##  Insertion of Sensitive Information Into Sent Data
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -71,7 +71,7 @@ end
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -87,9 +87,9 @@ end
 
 
 
-## آسیب پذیری  Cross-Site Request Forgery (CSRF)
+##   Cross-Site Request Forgery (CSRF)
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -105,7 +105,7 @@ end
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -132,9 +132,9 @@ end
 
 
 
-## آسیب پذیری  Use of Hard-coded Password
+##   Use of Hard-coded Password
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -151,7 +151,7 @@ end
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -174,9 +174,9 @@ end
 
 
 
-## آسیب پذیری  Broken or Risky Crypto Algorithm
+##   Broken or Risky Crypto Algorithm
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -197,7 +197,7 @@ end
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -218,9 +218,9 @@ end
 
 
 
-## آسیب پذیری  Insufficient Entropy
+##   Insufficient Entropy
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -237,7 +237,7 @@ end
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -263,9 +263,9 @@ end
 
 
 
-## آسیب پذیری  XSS
+##   XSS
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -280,7 +280,7 @@ end
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -300,9 +300,9 @@ end
 
 
 
-## آسیب پذیری  SQL Injection
+##   SQL Injection
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -318,7 +318,7 @@ end
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -335,9 +335,9 @@ end
 
 
 
-## آسیب پذیری  External Control of File Name or Path
+##   External Control of File Name or Path
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -355,7 +355,7 @@ end
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -379,9 +379,9 @@ end
 
 
 
-## آسیب پذیری  Generation of Error Message Containing Sensitive Information
+##   Generation of Error Message Containing Sensitive Information
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -403,7 +403,7 @@ end
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -426,9 +426,9 @@ end
 
 
 
-## آسیب پذیری  unprotected storage of credentials
+##   unprotected storage of credentials
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -442,7 +442,7 @@ DB_PASSWORD = 'my_db_password'
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -460,9 +460,9 @@ DB_PASSWORD = ENV['DB_PASSWORD']
 
 
 
-## آسیب پذیری  Trust Boundary Violation
+##   Trust Boundary Violation
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -481,7 +481,7 @@ end
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -503,9 +503,9 @@ end
 
 
 
-## آسیب پذیری  Insufficiently Protected Credentials
+##   Insufficiently Protected Credentials
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -521,7 +521,7 @@ DB_PASSWORD = 'my_db_password'
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -555,9 +555,9 @@ DB_PASSWORD = encrypt_credentials('my_db_password')
 
 
 
-## آسیب پذیری  Restriction of XML External Entity Reference
+##   Restriction of XML External Entity Reference
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -575,7 +575,7 @@ doc = Nokogiri::XML(xml_data)
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -600,10 +600,10 @@ end
 
 
 
-## آسیب پذیری  Vulnerable and Outdated Components
+##   Vulnerable and Outdated Components
 
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -619,7 +619,7 @@ end
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -638,9 +638,9 @@ end
 
 
 
-## آسیب پذیری  Improper Validation of Certificate with Host Mismatch
+##   Improper Validation of Certificate with Host Mismatch
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -666,7 +666,7 @@ puts response
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -696,9 +696,9 @@ puts response
 
 
 
-## آسیب پذیری  Improper Authentication
+##   Improper Authentication
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -719,7 +719,7 @@ authenticate('admin', 'guess')  # Noncompliant authentication attempt
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -751,9 +751,9 @@ authenticate('admin', 'guess')  # Compliant authentication attempt
 
 
 
-## آسیب پذیری  Session Fixation
+##   Session Fixation
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -775,7 +775,7 @@ end
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -804,9 +804,9 @@ end
 
 
 
-## آسیب پذیری  Inclusion of Functionality from Untrusted Control
+##   Inclusion of Functionality from Untrusted Control
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -821,7 +821,7 @@ eval(source_code)
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -841,9 +841,9 @@ sandbox.eval(source_code)
 
 
 
-## آسیب پذیری  Download of Code Without Integrity Check
+##   Download of Code Without Integrity Check
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -861,7 +861,7 @@ file_content = open(file_url).read
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -887,9 +887,9 @@ end
 
 
 
-## آسیب پذیری  Deserialization of Untrusted Data
+##   Deserialization of Untrusted Data
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -905,7 +905,7 @@ object = Marshal.load(data)
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -936,9 +936,9 @@ end
 
 
 
-## آسیب پذیری  Insufficient Logging
+##   Insufficient Logging
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -959,7 +959,7 @@ end
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -987,9 +987,9 @@ end
 
 
 
-## آسیب پذیری  Improper Output Neutralization for Logs
+##   Improper Output Neutralization for Logs
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -1005,7 +1005,7 @@ end
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -1038,9 +1038,9 @@ end
 
 
 
-## آسیب پذیری  Omission of Security-relevant Information
+##   Omission of Security-relevant Information
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -1059,7 +1059,7 @@ end
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -1083,9 +1083,9 @@ end
 
 
 
-## آسیب پذیری  Sensitive Information into Log File
+##   Sensitive Information into Log File
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -1101,7 +1101,7 @@ end
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -1121,9 +1121,9 @@ end
 
 
 
-## آسیب پذیری  Server-Side Request Forgery (SSRF)
+##   Server-Side Request Forgery (SSRF)
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -1141,7 +1141,7 @@ end
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}

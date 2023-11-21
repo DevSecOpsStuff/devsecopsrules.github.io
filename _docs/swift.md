@@ -10,10 +10,10 @@ description: Swift Vulnerabilities
 
 
 
-## آسیب پذیری Improper Platform Usage
+##  Improper Platform Usage
 
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 
@@ -49,7 +49,7 @@ class ViewController: UIViewController {
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -100,10 +100,10 @@ class ViewController: UIViewController {
 
 
 
-## آسیب پذیری Insecure Data Storage
+##  Insecure Data Storage
 
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -130,7 +130,7 @@ class ViewController: UIViewController {
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 
@@ -165,9 +165,9 @@ class ViewController: UIViewController {
 
 
 
-## آسیب پذیری Insecure Communication
+##  Insecure Communication
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -204,7 +204,7 @@ class ViewController: UIViewController {
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 
@@ -242,9 +242,9 @@ class ViewController: UIViewController {
 
 
 
-## آسیب پذیری Insecure Authentication
+##  Insecure Authentication
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -287,7 +287,7 @@ class LoginViewController: UIViewController {
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -327,9 +327,9 @@ class LoginViewController: UIViewController {
 
 
 
-## آسیب پذیری Insufficient Cryptography
+##  Insufficient Cryptography
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -371,7 +371,7 @@ func encryptData(data: Data, key: String) -> Data? {
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -411,10 +411,10 @@ func encryptData(data: Data, key: Data) -> Data? {
 
 
 
-## آسیب پذیری Insecure Authorization
+##  Insecure Authorization
 
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -431,7 +431,7 @@ func checkPermission(user: User, permission: String) -> Bool {
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -459,10 +459,10 @@ func retrieveUserPermissions(user: User) -> [String]? {
 
 
 
-## آسیب پذیری Client Code Quality
+##  Client Code Quality
 
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -488,7 +488,7 @@ class ViewController: UIViewController {
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -517,10 +517,10 @@ class AlertHelper {
 
 
 
-## آسیب پذیری Code Tampering
+##  Code Tampering
 
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -560,7 +560,7 @@ class MainViewController: UIViewController {
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -597,10 +597,10 @@ class MainViewController: UIViewController {
 
 
 
-## آسیب پذیری Reverse Engineering
+##  Reverse Engineering
 
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -635,7 +635,7 @@ class ViewController: UIViewController {
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -668,10 +668,10 @@ class ViewController: UIViewController {
 
 
 
-## آسیب پذیری Extraneous Functionality
+##  Extraneous Functionality
 
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -713,7 +713,7 @@ class ViewController: UIViewController {
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}

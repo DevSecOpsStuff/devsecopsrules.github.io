@@ -11,10 +11,10 @@ description: C# Vulnerabilities
 
 
 
-## آسیب پذیری Exposure of sensitive information
+##  Exposure of sensitive information
 
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 
@@ -45,7 +45,7 @@ class Program
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -112,9 +112,9 @@ select tryCatch
 
 
 
-## آسیب پذیری Insertion of Sensitive Information Into Sent Data
+##  Insertion of Sensitive Information Into Sent Data
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -147,7 +147,7 @@ class Program
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -212,9 +212,9 @@ select messageCreation
 
 
 
-## آسیب پذیری  Cross-Site Request Forgery (CSRF)
+##   Cross-Site Request Forgery (CSRF)
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -238,7 +238,7 @@ public partial class MyPage : Page
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -333,9 +333,9 @@ select method
 
 
 
-## آسیب پذیری  Use of Hard-coded Password
+##   Use of Hard-coded Password
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -362,7 +362,7 @@ public class DatabaseConnector
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -420,9 +420,9 @@ select field
 
 
 
-## آسیب پذیری  Broken or Risky Crypto Algorithm
+##   Broken or Risky Crypto Algorithm
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -457,7 +457,7 @@ public class CryptoUtils
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -515,9 +515,9 @@ select assignment
 
 
 
-## آسیب پذیری  Insufficient Entropy
+##   Insufficient Entropy
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -538,7 +538,7 @@ public class RandomNumberGenerator
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -596,9 +596,9 @@ select randomCreation
 
 
 
-## آسیب پذیری  XSS
+##   XSS
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -618,7 +618,7 @@ public class UserInputProcessor
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -663,9 +663,9 @@ select replaceMethod
 
 
 
-## آسیب پذیری  SQL Injection
+##   SQL Injection
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -692,7 +692,7 @@ public class UserLogin
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -747,9 +747,9 @@ select binaryExpr
 
 
 
-## آسیب پذیری  External Control of File Name or Path
+##   External Control of File Name or Path
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -779,7 +779,7 @@ public class FileProcessor
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -837,9 +837,9 @@ select addExpr
 
 
 
-## آسیب پذیری  Generation of Error Message Containing Sensitive Information
+##   Generation of Error Message Containing Sensitive Information
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -863,7 +863,7 @@ public class UserController
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -911,9 +911,9 @@ select invocation
 {% endhighlight %}
 
 
-## آسیب پذیری  unprotected storage of credentials
+##   unprotected storage of credentials
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -942,7 +942,7 @@ public class UserController
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -1038,9 +1038,9 @@ select access
 {% endhighlight %}
 
 
-## آسیب پذیری  Trust Boundary Violation
+##   Trust Boundary Violation
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -1063,7 +1063,7 @@ public class PaymentController
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -1127,9 +1127,9 @@ select access
 
 
 
-## آسیب پذیری  Insufficiently Protected Credentials
+##   Insufficiently Protected Credentials
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -1158,7 +1158,7 @@ public class LoginController
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -1224,9 +1224,9 @@ rules:
 
 
 
-## آسیب پذیری  Restriction of XML External Entity Reference
+##   Restriction of XML External Entity Reference
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -1251,7 +1251,7 @@ public class XmlParser
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -1313,10 +1313,10 @@ select call
 
 
 
-## آسیب پذیری  Vulnerable and Outdated Components
+##   Vulnerable and Outdated Components
 
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -1349,7 +1349,7 @@ public class UserController
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -1413,9 +1413,9 @@ select call
 
 
 
-## آسیب پذیری  Improper Validation of Certificate with Host Mismatch
+##   Improper Validation of Certificate with Host Mismatch
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -1457,7 +1457,7 @@ public class HttpClientExample
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -1536,9 +1536,9 @@ select call
 
 
 
-## آسیب پذیری  Improper Authentication
+##   Improper Authentication
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -1580,7 +1580,7 @@ public class AuthenticationExample
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -1660,9 +1660,9 @@ select query, call
 
 
 
-## آسیب پذیری  Session Fixation
+##   Session Fixation
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -1696,7 +1696,7 @@ public class SessionFixationExample
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -1762,9 +1762,9 @@ select session, call
 {% endhighlight %}
 
 
-## آسیب پذیری  Inclusion of Functionality from Untrusted Control
+##   Inclusion of Functionality from Untrusted Control
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -1793,7 +1793,7 @@ public class FileUploader
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -1868,9 +1868,9 @@ rules:
 
 
 
-## آسیب پذیری  Download of Code Without Integrity Check
+##   Download of Code Without Integrity Check
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -1904,7 +1904,7 @@ public class CodeDownloader
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -2009,9 +2009,9 @@ select CodeDownload
 {% endhighlight %}
 
 
-## آسیب پذیری  Deserialization of Untrusted Data
+##   Deserialization of Untrusted Data
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -2068,7 +2068,7 @@ select DataDeserialization
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -2192,9 +2192,9 @@ select d, e
 
 
 
-## آسیب پذیری  Insufficient Logging
+##   Insufficient Logging
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -2227,7 +2227,7 @@ public class PaymentProcessor
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -2319,9 +2319,9 @@ select p
 
 
 
-## آسیب پذیری  Improper Output Neutralization for Logs
+##   Improper Output Neutralization for Logs
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -2348,7 +2348,7 @@ public class LoginController
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -2436,9 +2436,9 @@ select ma2, "Improper output neutralization for logs"
 
 
 
-## آسیب پذیری  Omission of Security-relevant Information
+##   Omission of Security-relevant Information
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -2481,7 +2481,7 @@ public interface ILogger
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -2583,9 +2583,9 @@ select ma2, "Improper output neutralization for logs"
 
 
 
-## آسیب پذیری  Sensitive Information into Log File
+##   Sensitive Information into Log File
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -2627,7 +2627,7 @@ public interface ILogger
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -2726,9 +2726,9 @@ select ma2, "Improper output neutralization for logs"
 
 
 
-## آسیب پذیری  Server-Side Request Forgery (SSRF)
+##   Server-Side Request Forgery (SSRF)
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -2753,7 +2753,7 @@ public class ImageController
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}

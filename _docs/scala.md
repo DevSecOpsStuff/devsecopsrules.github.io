@@ -9,10 +9,10 @@ description: Scala Vulnerabilities
 
 
 
-## آسیب پذیری Exposure of sensitive information
+##  Exposure of sensitive information
 
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 
@@ -36,7 +36,7 @@ def processUserInput(input: String): Unit = {
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -54,9 +54,9 @@ def processUserInput(input: String): Unit = {
 
 
 
-## آسیب پذیری Insertion of Sensitive Information Into Sent Data
+##  Insertion of Sensitive Information Into Sent Data
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -85,7 +85,7 @@ def sendRequest(data: String): Unit = {
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -115,9 +115,9 @@ def sendRequest(data: String): Unit = {
 
 
 
-## آسیب پذیری  Cross-Site Request Forgery (CSRF)
+##   Cross-Site Request Forgery (CSRF)
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -137,7 +137,7 @@ def transferFunds(request: Request): Response = {
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -172,9 +172,9 @@ def validateCsrfToken(csrfToken: String): Boolean = {
 
 
 
-## آسیب پذیری  Use of Hard-coded Password
+##   Use of Hard-coded Password
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -194,7 +194,7 @@ def authenticate(username: String, password: String): Boolean = {
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -229,9 +229,9 @@ def verifyPassword(password: String, storedPasswordHash: String): Boolean = {
 
 
 
-## آسیب پذیری  Broken or Risky Crypto Algorithm
+##   Broken or Risky Crypto Algorithm
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -252,7 +252,7 @@ def hashPassword(password: String): String = {
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -272,9 +272,9 @@ def hashPassword(password: String): String = {
 
 
 
-## آسیب پذیری  Insufficient Entropy
+##   Insufficient Entropy
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -292,7 +292,7 @@ def generateOTP(): String = {
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -314,9 +314,9 @@ def generateOTP(): String = {
 
 
 
-## آسیب پذیری  XSS
+##   XSS
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -332,7 +332,7 @@ def displayMessage(message: String): NodeSeq = {
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -350,9 +350,9 @@ def displayMessage(message: String): NodeSeq = {
 
 
 
-## آسیب پذیری  SQL Injection
+##   SQL Injection
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -388,7 +388,7 @@ def getUser(userId: String): Option[String] = {
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -426,9 +426,9 @@ def getUser(userId: String): Option[String] = {
 
 
 
-## آسیب پذیری  External Control of File Name or Path
+##   External Control of File Name or Path
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -448,7 +448,7 @@ def readFile(fileName: String): String = {
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -472,9 +472,9 @@ def readFile(fileName: String): Option[String] = {
 
 
 
-## آسیب پذیری  Generation of Error Message Containing Sensitive Information
+##   Generation of Error Message Containing Sensitive Information
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -492,7 +492,7 @@ def divide(a: Int, b: Int): Int = {
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -511,9 +511,9 @@ def divide(a: Int, b: Int): Int = {
 
 
 
-## آسیب پذیری  unprotected storage of credentials
+##   unprotected storage of credentials
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -527,7 +527,7 @@ val password = "secretpassword"
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -569,9 +569,9 @@ def readSecureValue(key: String): String = {
 
 
 
-## آسیب پذیری  Trust Boundary Violation
+##   Trust Boundary Violation
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -599,7 +599,7 @@ def checkUserRole(userRole: String): Boolean = {
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -643,9 +643,9 @@ def checkUserRole(userRole: String): Boolean = {
 
 
 
-## آسیب پذیری  Insufficiently Protected Credentials
+##   Insufficiently Protected Credentials
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -661,7 +661,7 @@ val connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb",
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -704,9 +704,9 @@ def readPasswordFromConfig(): String = {
 
 
 
-## آسیب پذیری  Restriction of XML External Entity Reference
+##   Restriction of XML External Entity Reference
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -729,7 +729,7 @@ val xml = XML.loadString("""
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -763,10 +763,10 @@ val xml = XML.withSAXParser(builder).loadString("""
 
 
 
-## آسیب پذیری  Vulnerable and Outdated Components
+##   Vulnerable and Outdated Components
 
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -781,7 +781,7 @@ val hashedPassword = DigestUtils.sha1Hex(password)
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -800,9 +800,9 @@ val hashedPassword = sha256.digest(password.getBytes).map("%02x".format(_)).mkSt
 
 
 
-## آسیب پذیری  Improper Validation of Certificate with Host Mismatch
+##   Improper Validation of Certificate with Host Mismatch
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -826,7 +826,7 @@ val responseCode = connection.getResponseCode()
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -855,9 +855,9 @@ val responseCode = connection.getResponseCode()
 
 
 
-## آسیب پذیری  Improper Authentication
+##   Improper Authentication
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -890,7 +890,7 @@ def authenticate(username: String, password: String): Boolean = {
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -924,9 +924,9 @@ def authenticate(username: String, password: Array[Char]): Boolean = {
 
 
 
-## آسیب پذیری  Session Fixation
+##   Session Fixation
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -954,7 +954,7 @@ def generateNewSessionId(): String = {
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -982,9 +982,9 @@ def generateNewSessionId(): String = {
 
 
 
-## آسیب پذیری  Inclusion of Functionality from Untrusted Control
+##   Inclusion of Functionality from Untrusted Control
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -1007,7 +1007,7 @@ def loadTemplate(templateName: String): Template = {
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -1041,9 +1041,9 @@ def isValidTemplateName(templateName: String): Boolean = {
 
 
 
-## آسیب پذیری  Download of Code Without Integrity Check
+##   Download of Code Without Integrity Check
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -1060,7 +1060,7 @@ def downloadAndExecute(url: String): Unit = {
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -1089,9 +1089,9 @@ def verifyIntegrity(code: String, checksum: String): Boolean = {
 
 
 
-## آسیب پذیری  Deserialization of Untrusted Data
+##   Deserialization of Untrusted Data
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -1111,7 +1111,7 @@ def deserializeObject(data: Array[Byte]): Any = {
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -1140,9 +1140,9 @@ def deserializeObject(data: Array[Byte]): Any = {
 
 
 
-## آسیب پذیری  Insufficient Logging
+##   Insufficient Logging
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -1173,7 +1173,7 @@ def performSensitiveOperation(input: String): Unit = {
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -1201,9 +1201,9 @@ end
 
 
 
-## آسیب پذیری  Improper Output Neutralization for Logs
+##   Improper Output Neutralization for Logs
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -1219,7 +1219,7 @@ end
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -1252,9 +1252,9 @@ end
 
 
 
-## آسیب پذیری  Omission of Security-relevant Information
+##   Omission of Security-relevant Information
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -1273,7 +1273,7 @@ end
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -1297,9 +1297,9 @@ end
 
 
 
-## آسیب پذیری  Sensitive Information into Log File
+##   Sensitive Information into Log File
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -1315,7 +1315,7 @@ end
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -1335,9 +1335,9 @@ end
 
 
 
-## آسیب پذیری  Server-Side Request Forgery (SSRF)
+##   Server-Side Request Forgery (SSRF)
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -1355,7 +1355,7 @@ end
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}

@@ -8,15 +8,15 @@ description: C++ Vulnerabilities
 # C++
 
 
-### آسیب پذیری Null Pointer Dereference
+###  Null Pointer Dereference
 
 
-<button class="btn btn-danger">آسیب پذیری</button>
+<button class="btn btn-danger"></button>
 
 
 
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 {% highlight php %}
 void foo(int* ptr) {
@@ -36,7 +36,7 @@ int main() {
 
 
 
-##### ✅ کد اصلاح شده
+##### ✅ compliance
 
 {% highlight php %}
 void foo(int* ptr) {

@@ -10,10 +10,10 @@ description: Terraform Vulnerabilities
 
   
 
-## آسیب پذیریHardcoded Credential
+## Hardcoded Credential
 
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -26,7 +26,7 @@ resource "aws_instance" "my_instance" {
 }
 {% endhighlight %}
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 

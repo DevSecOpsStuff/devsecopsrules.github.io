@@ -10,10 +10,10 @@ description: VB.NET Vulnerabilities
 
 
 
-## آسیب پذیری Plain Text Password 
+##  Plain Text Password 
 
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -39,7 +39,7 @@ End Sub
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 

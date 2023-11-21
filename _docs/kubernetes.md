@@ -9,9 +9,9 @@ description: Kubernetes Vulnerabilities
 
 
 
-## آسیب پذیری Hardcoded Credential
+##  Hardcoded Credential
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 {% highlight php %}
 # Noncompliant code
@@ -38,7 +38,7 @@ spec:
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 

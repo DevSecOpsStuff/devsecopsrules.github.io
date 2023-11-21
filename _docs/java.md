@@ -9,10 +9,10 @@ description: Java Vulnerabilities
 
 
 
-## آسیب پذیری Exposure of sensitive information
+##  Exposure of sensitive information
 
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 
@@ -37,7 +37,7 @@ public class UserController {
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -66,9 +66,9 @@ public class UserController {
 
 
 
-## آسیب پذیری Insertion of Sensitive Information Into Sent Data
+##  Insertion of Sensitive Information Into Sent Data
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -111,7 +111,7 @@ public class PaymentService {
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -166,9 +166,9 @@ public class PaymentService {
 
 
 
-## آسیب پذیری  Cross-Site Request Forgery (CSRF)
+##   Cross-Site Request Forgery (CSRF)
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -187,7 +187,7 @@ public class AccountService {
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -228,9 +228,9 @@ public class AccountService {
 
 
 
-## آسیب پذیری  Use of Hard-coded Password
+##   Use of Hard-coded Password
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -249,7 +249,7 @@ public class DatabaseConnection {
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -276,9 +276,9 @@ public class DatabaseConnection {
 
 
 
-## آسیب پذیری  Broken or Risky Crypto Algorithm
+##   Broken or Risky Crypto Algorithm
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -309,7 +309,7 @@ public class PasswordUtils {
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -332,9 +332,9 @@ public class PasswordUtils {
 
 
 
-## آسیب پذیری  Insufficient Entropy
+##   Insufficient Entropy
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -360,7 +360,7 @@ public class TokenGenerator {
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -384,9 +384,9 @@ public class TokenGenerator {
 
 
 
-## آسیب پذیری  XSS
+##   XSS
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -414,7 +414,7 @@ public class XssExample {
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -447,9 +447,9 @@ public class XssExample {
 
 
 
-## آسیب پذیری  SQL Injection
+##   SQL Injection
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -481,7 +481,7 @@ public class SqlInjectionExample {
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -517,9 +517,9 @@ public class SqlInjectionExample {
 
 
 
-## آسیب پذیری  External Control of File Name or Path
+##   External Control of File Name or Path
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -549,7 +549,7 @@ public class FileUploadExample {
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -588,9 +588,9 @@ public class FileUploadExample {
 
 
 
-## آسیب پذیری  Generation of Error Message Containing Sensitive Information
+##   Generation of Error Message Containing Sensitive Information
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -611,7 +611,7 @@ public class UserService {
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -632,9 +632,9 @@ public class UserService {
 
 
 
-## آسیب پذیری  unprotected storage of credentials
+##   unprotected storage of credentials
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -661,7 +661,7 @@ public class UserService {
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -696,9 +696,9 @@ public class UserService {
 
 
 
-## آسیب پذیری  Trust Boundary Violation
+##   Trust Boundary Violation
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -733,7 +733,7 @@ public class UserAuthenticator {
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -780,9 +780,9 @@ public class UserAuthenticator {
 
 
 
-## آسیب پذیری  Insufficiently Protected Credentials
+##   Insufficiently Protected Credentials
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -807,7 +807,7 @@ public class UserAuthenticator {
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -839,9 +839,9 @@ public class UserAuthenticator {
 
 
 
-## آسیب پذیری  Restriction of XML External Entity Reference
+##   Restriction of XML External Entity Reference
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -870,7 +870,7 @@ public class XMLParser {
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -908,10 +908,10 @@ public class XMLParser {
 
 
 
-## آسیب پذیری  Vulnerable and Outdated Components
+##   Vulnerable and Outdated Components
 
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -936,7 +936,7 @@ public class StringHelper {
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -964,9 +964,9 @@ public class StringHelper {
 
 
 
-## آسیب پذیری  Improper Validation of Certificate with Host Mismatch
+##   Improper Validation of Certificate with Host Mismatch
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -992,7 +992,7 @@ public class HttpClient {
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -1032,9 +1032,9 @@ public class HttpClient {
 
 
 
-## آسیب پذیری  Improper Authentication
+##   Improper Authentication
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -1065,7 +1065,7 @@ public class AuthenticationExample {
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -1142,9 +1142,9 @@ public class AuthenticationExample {
 
 
 
-## آسیب پذیری  Session Fixation
+##   Session Fixation
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -1173,7 +1173,7 @@ public class SessionFixationExample {
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -1208,9 +1208,9 @@ public class SessionFixationExample {
 
 
 
-## آسیب پذیری  Inclusion of Functionality from Untrusted Control
+##   Inclusion of Functionality from Untrusted Control
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -1240,7 +1240,7 @@ public class UntrustedFunctionalityExample {
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -1282,9 +1282,9 @@ public class UntrustedFunctionalityExample {
 
 
 
-## آسیب پذیری  Download of Code Without Integrity Check
+##   Download of Code Without Integrity Check
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -1318,7 +1318,7 @@ public class CodeDownloadExample {
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -1389,9 +1389,9 @@ public class CodeDownloadExample {
 
 
 
-## آسیب پذیری  Deserialization of Untrusted Data
+##   Deserialization of Untrusted Data
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -1421,7 +1421,7 @@ public class DeserializationExample {
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -1467,9 +1467,9 @@ public class DeserializationExample {
 
 
 
-## آسیب پذیری  Insufficient Logging
+##   Insufficient Logging
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -1491,7 +1491,7 @@ public class PaymentService {
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -1516,9 +1516,9 @@ public class PaymentService {
 
 
 
-## آسیب پذیری  Improper Output Neutralization for Logs
+##   Improper Output Neutralization for Logs
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -1536,7 +1536,7 @@ public class LoginService {
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -1568,9 +1568,9 @@ public class LoginService {
 
 
 
-## آسیب پذیری  Omission of Security-relevant Information
+##   Omission of Security-relevant Information
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -1589,7 +1589,7 @@ public class PaymentService {
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -1620,9 +1620,9 @@ public class PaymentService {
 
 
 
-## آسیب پذیری  Sensitive Information into Log File
+##   Sensitive Information into Log File
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -1642,7 +1642,7 @@ public class UserService {
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}
@@ -1666,9 +1666,9 @@ public class UserService {
 
 
 
-## آسیب پذیری  Server-Side Request Forgery (SSRF)
+##   Server-Side Request Forgery (SSRF)
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -1693,7 +1693,7 @@ public class ImageProcessor {
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}

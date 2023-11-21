@@ -10,15 +10,15 @@ description: Kotlin Vulnerabilities
 
 
 
-### آسیب پذیری XML External Entity (XXE)
+###  XML External Entity (XXE)
 
 
-<button class="btn btn-danger">آسیب پذیری</button>
+<button class="btn btn-danger"></button>
 
 
 
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -32,7 +32,7 @@ fun processInput(input: String) {
 
 
 
-##### ✅ کد اصلاح شده
+##### ✅ compliance
 
 
 {% highlight php %}

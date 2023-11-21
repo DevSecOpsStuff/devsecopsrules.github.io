@@ -10,11 +10,11 @@ description: Objective-C Vulnerabilities
 
 
 
-## آسیب پذیری XML External Entity (XXE)
+##  XML External Entity (XXE)
 
 
 
-##### 🐞 کد آسیب پذیر
+##### 🐞 non-compliance
 
 
 {% highlight php %}
@@ -27,7 +27,7 @@ NSLog(@"Processing input: %@", input);
 
 
 
-##### ✅ کد اصلاح شده 
+##### ✅ compliance 
 
 
 {% highlight php %}

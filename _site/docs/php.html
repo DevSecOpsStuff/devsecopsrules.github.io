@@ -469,15 +469,15 @@ for (var i = 0; i < elems.length; i+= 1) {
             
 	      <h1 id="php">PHP</h1>
 
-<h3 id="آسیب-پذیری-xss">آسیب پذیری XSS</h3>
+<h3 id="آسیب-پذیری-xss"> XSS</h3>
 
-<p><button class="btn btn-danger">آسیب پذیری</button></p>
+<p><button class="btn btn-danger"></button></p>
 
-<p>آسیب پذیری XSS (Cross-Site Scripting) یکی از مهم ترین آسیب های امنیتی است که می تواند در برنامه های وب وجود داشته باشد. این آسیب پذیری به کاربران اجازه می دهد تا از وب سایت یک سفارشی سازی با استفاده از اسکریپت های جاوااسکریپت اجرا کنند. این اسکریپت ها می توانند بر روی وب سایت های دیگر هم نشان داده شوند و باعث آسیب های امنیتی بزرگ می شوند.</p>
+<p> XSS (Cross-Site Scripting) یکی از مهم ترین آسیب های امنیتی است که می تواند در برنامه های وب وجود داشته باشد. این  به کاربران اجازه می دهد تا از وب سایت یک سفارشی سازی با استفاده از اسکریپت های جاوااسکریپت اجرا کنند. این اسکریپت ها می توانند بر روی وب سایت های دیگر هم نشان داده شوند و باعث آسیب های امنیتی بزرگ می شوند.</p>
 
-<p>برای جلوگیری از آسیب پذیری XSS، لازم است که تمام ورودی های کاربر در برنامه های وب به طور دقیق تأیید و سانتی سازی شوند. همچنین می توان از کتابخانه های مخصوص امنیتی برای اعمال عملیات سانتی سازی استفاده کرد.</p>
+<p>برای جلوگیری از  XSS، لازم است که تمام ورودی های کاربر در برنامه های وب به طور دقیق تأیید و سانتی سازی شوند. همچنین می توان از کتابخانه های مخصوص امنیتی برای اعمال عملیات سانتی سازی استفاده کرد.</p>
 
-<h5 id="-کد-آسیب-پذیر">🐞 کد آسیب پذیر</h5>
+<h5 id="-کد-آسیب-پذیر">🐞 non-compliance</h5>
 
 <figure class="highlight"><pre><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span>
 
@@ -527,26 +527,26 @@ for (var i = 0; i < elems.length; i+= 1) {
 <span class="nt">&lt;/body&gt;</span>
 <span class="nt">&lt;/html&gt;</span></code></pre></figure>
 
-<h5 id="-کد-اصلاح-شده-توسط-htmlentities">✅ کد اصلاح شده توسط ‍<code class="language-plaintext highlighter-rouge">htmlentities</code></h5>
+<h5 id="-کد-اصلاح-شده-توسط-htmlentities">✅ compliance توسط ‍<code class="language-plaintext highlighter-rouge">htmlentities</code></h5>
 
 <figure class="highlight"><pre><code class="language-php" data-lang="php"><span class="c1">// sanitize the user input</span>
 <span class="nv">$name</span> <span class="o">=</span> <span class="nb">htmlentities</span><span class="p">(</span><span class="nv">$_POST</span><span class="p">[</span><span class="s1">'name'</span><span class="p">]);</span>
 <span class="nv">$message</span> <span class="o">=</span> <span class="nb">htmlentities</span><span class="p">(</span><span class="nv">$_POST</span><span class="p">[</span><span class="s1">'message'</span><span class="p">]);</span></code></pre></figure>
 
-<h5 id="-کد-اصلاح-شده-توسط-strip_tags">✅ کد اصلاح شده توسط ‍<code class="language-plaintext highlighter-rouge">strip_tags</code></h5>
+<h5 id="-کد-اصلاح-شده-توسط-strip_tags">✅ compliance توسط ‍<code class="language-plaintext highlighter-rouge">strip_tags</code></h5>
 
 <figure class="highlight"><pre><code class="language-php" data-lang="php"><span class="c1">// sanitize the user input</span>
 <span class="nv">$name</span> <span class="o">=</span> <span class="nb">strip_tags</span><span class="p">(</span><span class="nv">$_POST</span><span class="p">[</span><span class="s1">'name'</span><span class="p">]);</span>
 <span class="nv">$message</span> <span class="o">=</span> <span class="nb">strip_tags</span><span class="p">(</span><span class="nv">$_POST</span><span class="p">[</span><span class="s1">'message'</span><span class="p">]);</span></code></pre></figure>
 
-<h5 id="-کد-اصلاح-شده-توسط-strip_tagshtmlentities">✅ کد اصلاح شده توسط ‍<code class="language-plaintext highlighter-rouge">strip_tags+htmlentities</code></h5>
+<h5 id="-کد-اصلاح-شده-توسط-strip_tagshtmlentities">✅ compliance توسط ‍<code class="language-plaintext highlighter-rouge">strip_tags+htmlentities</code></h5>
 
 <figure class="highlight"><pre><code class="language-php" data-lang="php"><span class="c1">// sanitize the user input</span>
 <span class="nv">$name</span> <span class="o">=</span> <span class="nb">strip_tags</span><span class="p">(</span><span class="nb">htmlentities</span><span class="p">(</span><span class="nv">$_POST</span><span class="p">[</span><span class="s1">'name'</span><span class="p">]));</span>
 <span class="nv">$message</span> <span class="o">=</span> <span class="nb">strip_tags</span><span class="p">(</span><span class="nb">htmlentities</span><span class="p">(</span><span class="nv">$_POST</span><span class="p">[</span><span class="s1">'message'</span><span class="p">]));</span></code></pre></figure>
 
 <p>مطالعه بیشتر:
-<a href="https://securecoding.ir/index.php/%D8%AA%D8%B2%D8%B1%DB%8C%D9%82_%D8%A7%D8%B3%DA%A9%D8%B1%DB%8C%D9%BE%D8%AA(Cross_Site_Scripting)">آسیب پذیری XSS چیست</a></p>
+<a href="https://securecoding.ir/index.php/%D8%AA%D8%B2%D8%B1%DB%8C%D9%82_%D8%A7%D8%B3%DA%A9%D8%B1%DB%8C%D9%BE%D8%AA(Cross_Site_Scripting)"> XSS چیست</a></p>
 
 
 <script
