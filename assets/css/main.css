@@ -7624,7 +7624,7 @@ button.bg-dark:focus {
     -webkit-flex-wrap: nowrap!important;
     -ms-flex-wrap: nowrap!important;
     flex-wrap: nowrap!important;
-    margin-right: -42%;
+    margin-right: -21.5%;
 }
 }
 
@@ -18208,7 +18208,8 @@ html body .md-typeset .headerlink {
 
 @media (min-width: 768px){
 .pl-md-5, .px-md-5 {
-    padding-left: 36rem!important;
+    z-index: 0;
+    padding-left: 18rem!important;
 }
 }
 
@@ -18249,6 +18250,7 @@ html body .md-typeset .headerlink {
 
 @media(min-width:768px) {
     .td-sidebar {
+        z-index: 1;
         padding-top: 4rem;
         background-color: rgba(48, 99, 142, .03);
         padding-left: 1rem;
